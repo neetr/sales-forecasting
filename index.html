@@ -1,9 +1,125 @@
-<html>
-    <header>
-        <title>Sales Forecasting</title>
-    </header>
-    <body>
-        <h1>Sales Forecasting Application</h1>
-        <p>Welcome to the Sales Forecasting Application. Use this tool to predict future sales based on historical data.</p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Item Demand Forecasting</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>🍽️ Restaurants Sales Forecasting</h1>
+    <p>Fresh Analytics | AI-Powered Demand Prediction</p>
+  </header>
+
+  <main class="content">
+
+    <section class="section">
+      <h2>Problem Statement</h2>
+      <p>
+        In the ever-changing competitive market conditions, there is a need to make
+        correct business decisions and plan for future events. The effectiveness of
+        a business decision is influenced by the accuracy of the models used. Demand
+        is the most important aspect of a business's ability to achieve its objectives.
+        Many decisions in business depend on demand, such as production, sales, and
+        staffing requirements.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Project Objective</h2>
+      <p>
+        Fresh Analytics, a data analytics company, aims to comprehend and predict
+        the demand for various items across restaurants. The goal is to forecast
+        sales of items across different restaurants over the years, enabling better
+        decision-making and planning.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Process Flow</h2>
+      <div class="diagram-container">
+        <img src="images/process_flow.png" alt="Process Flow Diagram" />
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Approach</h2>
+      <ul>
+        <li>Performed data cleaning and exploratory data analysis after merging three files.</li>
+        <li>Identified sales trends across days and months.</li>
+        <li>Analyzed restaurant-level performance and top-selling items.</li>
+        <li>Built and compared multiple machine learning models (Linear Regression, XGBoost, Random Forest).</li>
+        <li>Evaluated models using RMSE and R² metrics.</li>
+        <li>Forecasted future demand for 2022-2023.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Key Insights</h2>
+      <div class="kpi-row">
+        <div class="kpi">
+          <div class="kpi-text">
+            <h3>Peak Sales Days</h3>
+            <p>Most sales happened on <strong>Fridays and Saturdays</strong>.</p>
+          </div>
+          <img src="images/sales_by_week.png" alt="Sales by Day" class="kpi-image" />
+        </div>
+
+        <div class="kpi">
+          <div class="kpi-text">
+            <h3>Top Month</h3>
+            <p><strong>July</strong> recorded the highest overall sales.</p>
+          </div>
+          <img src="images/sales_by_month.png" alt="Monthly Sales" class="kpi-image" />
+        </div>
+      </div>
+
+      <div class="kpi-row">
+        <div class="kpi">
+          <div class="kpi-text">
+            <h3>Top Restaurant</h3>
+            <p><strong>Bob’s Diner</strong> led with total sales, followed by <strong>Fou Cher</strong>.</p>
+          </div>
+          <img src="images/sales_by_restaurant.png" alt="Top Restaurants" class="kpi-image" />
+        </div>
+
+        <div class="kpi">
+          <div class="kpi-text">
+            <h3>Top Item</h3>
+            <p><strong>Strawberry Smoothie</strong> – 236,337 units sold.</p>
+          </div>
+          <img src="images/popular_items.png" alt="Top Selling Items" class="kpi-image" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Model Performance</h2>
+      <ul>
+        <li>Random Forest Regressor achieved the best accuracy among all models.</li>
+        <li>Linear Regression and XGBoost were slightly less accurate but computationally faster.</li>
+        <li>Predictions for 2022–2023 show a similar sales trend pattern as previous years.</li>
+      </ul>
+    </section>
+    <section class="section">
+      <h2>Forecast</h2>
+      <p>Forecast for the year 2021 to 2022 for the different models</p>
+      <div class="diagram-container">
+        <img src="images/forecast.png" alt="Forecast Diagram" />
+      </div>
+    </section>
+    <section class="section conclusion">
+      <h2>Conclusion</h2>
+      <p>
+        The project successfully built a demand forecasting pipeline that predicts
+        restaurant item sales using historical data. The model insights help optimize
+        inventory, staffing, and marketing strategies. Future work can include integrating
+        external factors such as weather, holidays, and promotions for even more accurate forecasting.
+      </p>
+    </section>
+
+  </main>
+
+</body>
 </html>

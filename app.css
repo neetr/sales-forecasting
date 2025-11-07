@@ -1,0 +1,132 @@
+:root {
+  --primary: #2563eb;
+  --bg-light: #f9fafb;
+  --text-dark: #1e293b;
+  --muted: #64748b;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.hero {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  border-bottom: 4px solid #1d4ed8;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.hero p {
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+.content {
+  padding: 2rem 8%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.section h2 {
+  color: var(--primary);
+  border-left: 4px solid var(--primary);
+  padding-left: 10px;
+  font-size: 1.4rem;
+}
+
+.section ul {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.diagram-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.diagram-container img {
+  width: 60%;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.kpi {
+  background: linear-gradient(90deg, #ecfeff, #f0fdfa);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kpi:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.kpi-text h3 {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.kpi-text p {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.kpi-image {
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 8px;
+  object-fit: contain;
+}
+
+.conclusion {
+  background: #f0f9ff;
+  border-left: 4px solid #3b82f6;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+}
+
+.footer {
+  text-align: center;
+  background: #1e293b;
+  color: #cbd5e1;
+  padding: 1.2rem 0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .kpi-row {
+    grid-template-columns: 1fr;
+  }
+}
